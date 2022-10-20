@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'OKRManagement'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_20735A8304834E6B98161A7712EBC240 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C4988E63562042F08E3AA10CE802CC85 }}
           package: .
