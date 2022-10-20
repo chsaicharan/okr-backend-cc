@@ -5,6 +5,7 @@ const loginRouter = require("./src/routers/login");
 const objectiveRouter = require("./src/routers/objectives");
 const weeklyPlansRouter = require("./src/routers/weeklyPlans");
 const upcomingTasksRouter = require("./src/routers/upcomingTasks");
+const checksRouter = require("./src/routers/checks");
 
 require("./src/db/mongoose").connect();
 const cors = require("cors");
@@ -31,6 +32,7 @@ app.use(loginRouter);
 app.use(objectiveRouter);
 app.use(weeklyPlansRouter);
 app.use(upcomingTasksRouter);
+app.use(checksRouter);
 
 app.listen(port, () => {
   console.log("Server is up on port " + port);
