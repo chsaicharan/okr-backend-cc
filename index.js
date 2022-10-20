@@ -13,7 +13,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3002;
 
-const whitelist = ["http://localhost:3000"];
+const whitelist = ["http://localhost:3000", "https://master.dxprp2nht6771.amplifyapp.com"];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
